@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>
-      wtf
+      Jamaica
     </h2>
   </div>
 </template>
