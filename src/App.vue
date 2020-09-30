@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about>">About</router-link> |
-      <router-link to="/brazil">Brazil</router-link> |
-      <router-link to="/hawaii">Hawaii</router-link> |
-      <router-link to="/jamaica">Jamaica</router-link> |
-      <router-link to="/panama">Panama</router-link> |
+      <TheNavigation />
     </div>
     <router-view />
   </div>
 </template>
+
+// because you import in app.vue, its available in all pages
+<script>
+import TheNavigation from "@/components/TheNavigation";
+
+export default {
+  components: {
+    TheNavigation
+  }
+};
+</script>
 
 <style>
 #app {
