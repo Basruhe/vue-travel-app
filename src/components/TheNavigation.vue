@@ -15,4 +15,20 @@
   display: flex;
   justify-content: center;
 }
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+  padding: 0 10px;
+}
+
+/* note: specifies the colour for the 'active' navigational link */
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>
+

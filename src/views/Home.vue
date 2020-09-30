@@ -1,3 +1,5 @@
+// Note: the v-for directive loops over the array of destinations (in the store) and prints them. 
+
 <template>
   <div class="home">
     <h1>All Destinations</h1>
