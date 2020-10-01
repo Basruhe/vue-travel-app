@@ -48,7 +48,7 @@ const routes = [
   },
 
   {
-    path: "/destinationdetails",
+    path: "/details/:id",
     name: "DestinationDetails",
     component: () =>
       import(
