@@ -20,7 +20,8 @@ import store from "@/store.js";
 export default {
   data() {
     return {
-      destinationID: this.$route.params.id
+      destinationID: this.$route.params.id,
+      componentLoaded: false
     };
   },
   // go to the store, return the destination whose destinations ID matches the ID we got through params
@@ -28,9 +29,11 @@ export default {
     destination() {
       return store.destinations.find(
         destination => destination.id === this.destinationId
-        // console.log(this.destination)
       );
     }
+  },
+  created: function() {
+    this.componentLoaded = true;
   }
 };
 </script>
